@@ -6,7 +6,7 @@
     <title>Indian Institute of Information Technology, Allahabad</title>
     <link rel="stylesheet" href="./assets/home_main.css">
 </head>
-<body onload="disableBackButton()">
+<body>
     <header class="header">
         <div class="menu-icon" onclick="toggleMenu()">
             <img src="./assets/menu.png" alt="Menu">
@@ -64,11 +64,14 @@
     <script src="./app/home_main.js"></script>
     <script>
         function disableBackButton() {
-            window.history.pushState(null, "", window.location.href);
-            window.onpopstate = function() {
-                window.history.pushState(null, "", window.location.href);
+            history.pushState(null, null, location.href);
+            window.onpopstate = function () {
+                history.go(1);
             };
         }
+
+        // Call disableBackButton on page load to ensure the back button is disabled initially
+        disableBackButton();
     </script>
 </body>
 </html>
