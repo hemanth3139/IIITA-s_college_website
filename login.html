@@ -6,7 +6,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="/assets/login.css">
 </head>
-<body onload="disableBackButton()">
+<body>
     <div class="wrapper">
         <h1>Login</h1>
         <div class="input-box">
@@ -31,11 +31,14 @@
     <script src="./app/login.js" type="module"></script>
     <script>
         function disableBackButton() {
-            window.history.pushState(null, "", window.location.href);
-            window.onpopstate = function() {
-                window.history.pushState(null, "", window.location.href);
+            history.pushState(null, null, location.href);
+            window.onpopstate = function () {
+                history.go(1);
             };
         }
+
+        // Call disableBackButton on page load to ensure the back button is disabled initially
+        disableBackButton();
     </script>
 </body>
 </html>
