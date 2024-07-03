@@ -2,6 +2,15 @@
 
 Welcome to the College Event Management System, a comprehensive platform designed to streamline the organization and management of events within our college. The website is tailored for two types of users: Admin and Student, ensuring a seamless experience for both event organizers and participants.
 
+## Overview
+The College Event Management System is a comprehensive web-based application designed to facilitate the management and coordination of various events within a college. The system caters to two types of users: Admin and Student. The website is organized into five main sections:
+
+1. **Home Page:** The landing page after login, showcasing images and information about the college.
+2. **Event Calendar:** Displays the dates and times of college events such as end-semester examinations, holidays, fest dates, etc.
+3. **Sports:** Provides information on sports teams, running scores, scorecards, venue details, and more.
+4. **Auditorium Events:** Lists events held in the auditorium with details such as the DJ night on June 24, 2024, at 20:00.
+5. **News & Announcements:** Features titles and content for important news and announcements.
+
 ## Features
 
 ### 1. Home Page
